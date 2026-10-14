@@ -1,0 +1,15 @@
+{
+  "framework": "numpy",
+  "classes": [
+    "pattern_none",
+    "pattern_round",
+    "pattern_irregular"
+  ],
+  "data_kind": "synthetic",
+  "image_size": 32,
+  "architecture": "linear-softmax-baseline",
+  "manifest_sha256": "41c3c0e2851acc536ff1118cc358d9a6c54f89e53cf9fcfedab6904800affb33",
+  "clinical_validation": false,
+  "stage_supported": false,
+  "seed": 42
+}

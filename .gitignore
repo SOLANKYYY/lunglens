@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+datasets/real/
+models/research*/
+models/pytorch*/
+models/tensorflow*/
+.vercel/
+.DS_Store
