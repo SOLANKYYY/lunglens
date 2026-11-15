@@ -1,7 +1,37 @@
 {
- "$schema":"https://openapi.vercel.sh/vercel.json",
- "framework":null,
- "outputDirectory":"web",
- "functions":{"api/*.py":{"includeFiles":"models/ct/**","maxDuration":30}},
- "headers":[{"source":"/(.*)","headers":[{"key":"X-Content-Type-Options","value":"nosniff"}]}]
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/*.py",
+      "use": "@vercel/python",
+      "config": {
+        "includeFiles": [
+          "backend/**",
+          "models/ct/**"
+        ]
+      }
+    },
+    {
+      "src": "web/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/health",
+      "dest": "/api/health.py"
+    },
+    {
+      "src": "/api/predict",
+      "dest": "/api/predict.py"
+    },
+    {
+      "src": "/",
+      "dest": "/web/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/web/$1"
+    }
+  ]
 }
