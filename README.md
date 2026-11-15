@@ -1,179 +1,67 @@
-# LungLens — Lung Screening Research Project
+# LungLens — Lung Cancer Detection Research
 
-A VS Code-ready academic project inspired by the lung screening concept described in your brief. Independent project: not affiliated with 12 Sigma and not a reproduction of its proprietary algorithm.
+Upload a de-identified CT image and run a **saved model trained on real IQ-OTH/NCCD CT images**. The default website now uses real inference; it does not use the old synthetic-pattern demonstration.
 
-**Start with the local demonstration below.** The package contains the complete website, Python API, training code for three framework options, a trained artificial-pattern baseline and 180 synthetic PNG images.
+## Live app
 
-## What is implemented?
+https://lunglens-seven.vercel.app
 
-| Component | Status |
-|---|---|
-| Responsive HTML/CSS/JavaScript dashboard | Included |
-| Scan preview, zoom, brightness, scripted samples | Included |
-| Local Python image inference API | Included; tested with NumPy model |
-| Training/validation/test pipeline and confusion matrix | Included |
-| NumPy artificial-pattern model | Trained; weights and evaluation included |
-| TensorFlow and PyTorch implementations | Included; optional dependencies; not runtime-tested in the build environment |
-| Normal / benign / malignant research training | Supported after preparing a real dataset manifest; no trained cancer classifier included |
-| Cancer stage learning cards (0–IV) | Included; educational NSCLC overview |
-| Automatic cancer staging or clinical diagnosis | Not implemented; stage always “Not assessed” |
-| Vercel static frontend configuration | Included; not yet deployed to Vercel |
+Choose one of six original test images, or download it and upload it again. Confirm it is a de-identified CT image, then click **Run trained model**. Download the resulting JSON report. The app displays normal / benign / malignant **dataset class predictions**, not a diagnosis. Scores are raw kernel regression outputs, not cancer probabilities. Cancer stage and severity are not assessed.
 
-## 1. Open in VS Code (Windows)
+## Dataset and attribution
 
-1. Extract `lunglens-vscode.zip` fully.
-2. VS Code → **File → Open Folder** → select `lunglens-vscode` (the folder containing this README).
-3. Install Python 3.11 and the Microsoft Python extension if needed.
-4. Open **Terminal → New Terminal**, then run from this project folder:
+- Kaggle: https://www.kaggle.com/datasets/hamdallak/the-iqothnccd-lung-cancer-dataset
+- Publisher and licence: https://data.mendeley.com/datasets/bhmdr45bh2/4
+- Downloaded author mirror: https://github.com/hamdalla93/The-IQ-OTHNCCD-lung-cancer-dataset
+- Source commit: `edcdd5a73e8e92377d2a47e69c0b9a551e1c5ce3`
+- alyasriy, hamdalla; AL-Huseiny, Muayed (2023), *The IQ-OTH/NCCD lung cancer dataset*, Mendeley Data V4, DOI **10.17632/bhmdr45bh2.4**, **CC BY 4.0**.
+- H. F. Al-Yasriy et al., *Diagnosis of Lung Cancer Based on CT Scans Using CNN*, IOP Conference Series: Materials Science and Engineering 928 (2020).
+- H. F. Kareem et al., *Evaluation of SVM performance in the detection of lung cancer in marked CT scan dataset*, IJEECS 21(3), 1731–1738 (2021), DOI 10.11591/ijeecs.v21.i3.pp1731-1738.
+
+Kaggle download was unavailable during this build, so the publisher-linked author mirror was used. The downloaded release contains **1,097 JPEGs** (416 normal, 120 benign, 561 malignant), despite the publisher's description mentioning 1,190 images. No artificial or augmented images were used to train this model. The six bundled examples are byte-identical original JPEGs; their source filenames and hashes are in `web/real_samples/samples.json`. They are shared under the dataset's CC BY 4.0 licence, separate from the software licence.
+
+## Model and measured results
+
+RBF kernel ridge classifier, 64×64 grayscale central crops. NumPy runtime; NumPy, SciPy and scikit-learn training. This is a classical machine-learning baseline, not a CNN or lesion-localization model.
+
+| Partition | Images |
+|---|---:|
+| Training | 657 |
+| Validation | 220 |
+| Held-out test | 220 |
+
+Validation macro F1 selects gamma and regularization. Only training images fit the weights. Test evaluation follows parameter selection: **accuracy 85.91%, macro F1 0.8125**. Malignant-class recall is 88.39%; 13 malignant test slices were predicted normal and 3 benign. See `models/ct/evaluation.json` for the complete confusion matrix and class metrics.
+
+**Critical evaluation limit:** filenames are sequential image numbers, not patient IDs. Exact decoded duplicates and perceptual hashes within Hamming distance 4 are grouped before splitting (254 similarity groups). Group overlap is checked, but unrecognized related slices and patient overlap may remain. These are exploratory image-level metrics, not patient-independent validation, calibrated risk, or evidence of clinical performance. Arbitrary non-CT pictures can receive a prediction. Low-contrast and malformed images are rejected; this is not a validated CT detector.
+
+## Run locally
 
 ```powershell
-py -3.11 -m venv .venv
+python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
-.\.venv\Scripts\python.exe -m backend.server
+.\.venv\Scripts\python.exe -m backend.ct_server
 ```
 
-Open **http://127.0.0.1:8000** in your browser. Keep the terminal running. Stop with Ctrl+C.
+Open http://127.0.0.1:8000. The model is loaded from `models/ct/weights.npz` using `allow_pickle=False`; no retraining is needed to restore it.
 
-If `py` is unavailable but Python 3.11 is installed, use `python -m venv .venv` for the first command. The explicit virtual-environment Python commands avoid PowerShell activation-policy problems.
-
-macOS/Linux:
-
-```bash
-python3 -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt
-.venv/bin/python -m backend.server
-```
-
-Choose `.venv` with **Python: Select Interpreter** in VS Code. An F5 launch configuration is included.
-
-## 2. Show a real code-to-output demonstration
-
-1. Open **Datasets & model**. It should say **Local Python API connected**.
-2. Download the **Round-pattern sample** or another bundled synthetic example.
-3. In **Overview → Browse files**, select that downloaded PNG.
-4. Click **Run local model**. The Python code computes class scores from the image pixels using the supplied weights.
-5. Download the JSON model report. It records the framework, artificial-pattern class, scores, limitations and `stage: null`.
-6. Open **Cancer stages** to explain Stage 0–IV as a separate educational reference.
-7. Show `backend/train.py`, `backend/common.py`, `backend/inference.py` and `models/demo/evaluation.json` to faculty.
-
-The original “Run demo analysis” on drawn sample cases is a **scripted UI simulation**. “Run local model” on an uploaded PNG is **actual computation using the trained synthetic-pattern baseline**. Neither is a cancer diagnosis.
-
-## 3. Train and test the included dataset
-
-The 180 images are already included under `datasets/synthetic/`:
-
-| Split | Images | Per class |
-|---|---:|---:|
-| Training | 108 | 36 |
-| Validation | 36 | 12 |
-| Test | 36 | 12 |
-
-Classes: `pattern_none`, `pattern_round`, `pattern_irregular`. They are not medical diagnoses.
-
-Run the tested NumPy baseline:
+## Reproduce training
 
 ```powershell
-.\.venv\Scripts\python.exe -m backend.train --framework numpy --epochs 200 --output models/demo
-.\.venv\Scripts\python.exe -m unittest discover -s tests -v
+git clone https://github.com/hamdalla93/The-IQ-OTHNCCD-lung-cancer-dataset.git ../iqoth-source
+git -C ../iqoth-source checkout edcdd5a73e8e92377d2a47e69c0b9a551e1c5ce3
+python -m pip install -r requirements-train.txt
+python -m scripts.train_ct --source ../iqoth-source
+python -m unittest discover -s tests -v
 ```
 
-The training script uses training data for updates, validation loss to choose weights, and the test split for the final evaluation. It writes `metadata.json`, weights and `evaluation.json` with a confusion matrix, precision, recall and macro F1. Restart the Python server after retraining to load the new weights.
+Seed 42. `models/ct/manifest.json` records every source file, split, similarity group and SHA256. `metadata.json` records the source commit, selected parameters and weight hash. Original training images remain outside the app checkout. Training overwrites the saved CT model and regenerates the six samples using filename order, without selecting for successful predictions.
 
-To regenerate the same synthetic dataset:
+## Hosting
 
-```powershell
-.\.venv\Scripts\python.exe scripts/generate_demo_data.py
-```
+The existing Vercel project serves `web/` plus Python functions `api/health.py` and `api/predict.py`. The Python functions restore the bundled model and execute inference. This is a live model API, not a static mock. Runtime dependencies are NumPy and Pillow; no API key, external AI provider or separate paid model host is needed. Uploads are limited to 4 MB and processed in memory; the app does not persist them or log their contents.
 
-The included run scored **34/36 on the synthetic test set (94.44%)**. This measures recognition of generated shapes only. **Do not call it lung cancer detection accuracy.** No real CT images were used to train this included model.
+The legacy synthetic training scripts and old tests remain for reproducibility but are not loaded by the new default interface. Use `backend.ct_server` for the new app, not the legacy `backend.server`.
 
-### PyTorch option
+## Medical scope
 
-```powershell
-.\.venv\Scripts\python.exe -m pip install -r requirements-pytorch.txt
-.\.venv\Scripts\python.exe -m backend.train --framework pytorch --epochs 100 --output models/pytorch-demo
-.\.venv\Scripts\python.exe -m backend.server --model models/pytorch-demo
-```
-
-### TensorFlow option
-
-```powershell
-.\.venv\Scripts\python.exe -m pip install -r requirements-tensorflow.txt
-.\.venv\Scripts\python.exe -m backend.train --framework tensorflow --epochs 100 --output models/tensorflow-demo
-.\.venv\Scripts\python.exe -m backend.server --model models/tensorflow-demo
-```
-
-Use **one framework at a time**. Both optional implementations use the same simple linear softmax architecture for a transparent comparison. This is not a CNN, segmentation model or nodule detector. The framework versions are dependency ranges, not a frozen reproducibility lockfile. After a successful installation, record your environment with `python -m pip freeze > requirements-lock.txt` and cite it in your submission.
-
-## 4. Real CT training data
-
-See [docs/DATASETS.md](docs/DATASETS.md) for the official **IQ-OTH/NCCD** download, licence, citations, a manifest example and patient-level split instructions. Real CT files are not bundled. They are separate from the synthetic demonstration.
-
-For a prepared real manifest with verified patient IDs:
-
-```powershell
-.\.venv\Scripts\python.exe scripts/split_manifest.py datasets/real/raw_manifest.csv
-.\.venv\Scripts\python.exe -m backend.train --framework pytorch --manifest datasets/real/manifest.csv --epochs 100 --output models/research-pytorch
-.\.venv\Scripts\python.exe -m backend.server --model models/research-pytorch
-```
-
-Install `requirements-pytorch.txt` first. The real manifest uses `normal`, `benign`, `malignant` labels. Use source annotations; do not invent diagnoses, patient IDs or stages. A research prediction is not a clinical finding and arbitrary non-CT inputs may also receive a class.
-
-## 5. Push to GitHub
-
-Create a new empty repository on GitHub. Do not initialize it with another README. Then run in the VS Code terminal:
-
-```bash
-git init
-git add .
-git commit -m "Add LungLens academic project"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/lunglens.git
-git push -u origin main
-```
-
-Replace `YOUR-USERNAME` with your account name. The package includes no existing `.git` history, hosted Site IDs, tokens or credentials. `.gitignore` excludes virtual environments, local secrets, real datasets and optional research model directories. It intentionally keeps the small synthetic dataset and NumPy demo model for reproducibility.
-
-## 6. Later deploy the frontend to Vercel
-
-See [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md). Import your GitHub repository, use **Other** as the framework and **web** as the output directory. No frontend build is needed.
-
-**Vercel static hosting publishes the interface and scripted demo, not the running local Python model.** The package's Python server is for local development. A public inference service requires a separate production backend and integration; do not claim model inference is live merely because the website is deployed.
-
-## Project structure
-
-```text
-lunglens-vscode/
-  web/                  Website; Vercel publishes this directory
-    index.html          Dashboard, reports, stages, datasets
-    styles.css          Responsive design
-    app.js              Viewer, scripted samples, session reports
-    project.js          Stage cards and local Python API integration
-    demo_samples/       Three downloadable synthetic test images
-  backend/
-    common.py           Shared preprocessing, split checks, evaluation
-    train.py            NumPy / PyTorch / TensorFlow training
-    inference.py        Trusted model loading and prediction
-    server.py           Local website + image API
-  datasets/synthetic/   180 PNGs, manifest.csv, dataset card
-  models/demo/          Tested NumPy weights, metadata, evaluation
-  scripts/              Synthetic generation and real-data splitting
-  tests/                Inference, leakage and HTTP checks
-  docs/                 Datasets, deployment and faculty presentation guide
-  .vscode/              Recommended extensions and debug launch settings
-  vercel.json           Static deployment configuration
-```
-
-## Limitations
-
-This is an educational software project. It does not establish diagnostic accuracy, localization, calibrated cancer risk or cancer stage. Synthetic examples are deliberately simple. Real-data research requires stronger models, verified labels, appropriate evaluation and specialist review before any clinical use. Stage education is based on NCI's NSCLC reference; it is not a complete staging rule engine.
-
-## Sources
-
-- IQ-OTH/NCCD dataset: https://data.mendeley.com/datasets/bhmdr45bh2/4
-- NCI NSCLC staging: https://www.cancer.gov/types/lung/patient/non-small-cell-lung-treatment-pdq
-- TensorFlow image classification: https://www.tensorflow.org/tutorials/images/classification
-- PyTorch quickstart: https://docs.pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html
-- Vercel configuration: https://vercel.com/docs/project-configuration/vercel-json
-
-Verification details: [docs/VERIFICATION.md](docs/VERIFICATION.md).
+This is an educational research project, not a medical device. A result cannot diagnose or exclude cancer, recommend treatment, or determine seriousness. Stage requires clinical assessment and information about tumor extent, nodes and spread; the image dataset has no per-image stage labels. Reference: https://www.cancer.gov/types/lung/patient/non-small-cell-lung-treatment-pdq

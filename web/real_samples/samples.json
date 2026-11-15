@@ -1,0 +1,44 @@
+[
+  {
+    "file": "normal-1.jpg",
+    "label": "normal",
+    "original_file": "Normal cases/Normal case (10).jpg",
+    "sha256": "550fba1b716023b8bf3d3537e2210a8186a72a693914ad7345c4483fb1934653",
+    "split": "test"
+  },
+  {
+    "file": "normal-2.jpg",
+    "label": "normal",
+    "original_file": "Normal cases/Normal case (11).jpg",
+    "sha256": "cac0074817a81c8569703166458bccb022323482e6b725fa63836102d3c8f9cf",
+    "split": "test"
+  },
+  {
+    "file": "benign-1.jpg",
+    "label": "benign",
+    "original_file": "Bengin cases/Bengin case (104).jpg",
+    "sha256": "030eaa160e50f3b6d8324ecacdd89815a9456fb7ea3ad49a92358568b6df0fb9",
+    "split": "test"
+  },
+  {
+    "file": "benign-2.jpg",
+    "label": "benign",
+    "original_file": "Bengin cases/Bengin case (105).jpg",
+    "sha256": "030eaa160e50f3b6d8324ecacdd89815a9456fb7ea3ad49a92358568b6df0fb9",
+    "split": "test"
+  },
+  {
+    "file": "malignant-1.jpg",
+    "label": "malignant",
+    "original_file": "Malignant cases/Malignant case (100).jpg",
+    "sha256": "85d0c787d1aa2440f79c826fc3a59ef6a290169d119425b7b252faf29766af95",
+    "split": "test"
+  },
+  {
+    "file": "malignant-2.jpg",
+    "label": "malignant",
+    "original_file": "Malignant cases/Malignant case (101).jpg",
+    "sha256": "c7e246a5ee102a22a452014bbe2d5f5bba9700c6f46a7b0dbbdc8487f376fc67",
+    "split": "test"
+  }
+]

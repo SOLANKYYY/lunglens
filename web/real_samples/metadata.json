@@ -1,0 +1,23 @@
+{
+  "model_version": "iqoth-kernel-v1",
+  "architecture": "RBF kernel ridge classifier",
+  "framework": "NumPy",
+  "data_kind": "research",
+  "classes": [
+    "normal",
+    "benign",
+    "malignant"
+  ],
+  "image_size": 64,
+  "gamma": 5.0,
+  "regularization": 0.01,
+  "seed": 42,
+  "clinical_validation": false,
+  "stage_supported": false,
+  "source": "https://github.com/hamdalla93/The-IQ-OTHNCCD-lung-cancer-dataset",
+  "source_commit": "edcdd5a73e8e92377d2a47e69c0b9a551e1c5ce3",
+  "dataset_doi": "10.17632/bhmdr45bh2.4",
+  "license": "CC BY 4.0",
+  "split_limitation": "Image-level split grouped by exact decoded pixels and perceptual hash distance <=4. Patient IDs are unavailable; patient overlap and near-duplicate leakage may remain. This is NOT patient-independent or clinical validation.",
+  "weights_sha256": "bb8318057946b7f71da7f233525f9d8f5467036ad03b69f1f52777e80fa00f03"
+}

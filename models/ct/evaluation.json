@@ -1,0 +1,109 @@
+{
+  "images": 1097,
+  "class_counts": {
+    "normal": 416,
+    "benign": 120,
+    "malignant": 561
+  },
+  "similarity_groups": 254,
+  "split_sizes": {
+    "train": 657,
+    "validation": 220,
+    "test": 220
+  },
+  "selection": "Validation macro F1; held-out test evaluated once after selecting hyperparameters. Training partition only fits weights.",
+  "limitation": "Image-level split grouped by exact decoded pixels and perceptual hash distance <=4. Patient IDs are unavailable; patient overlap and near-duplicate leakage may remain. This is NOT patient-independent or clinical validation.",
+  "trials": [
+    {
+      "gamma": 5.0,
+      "regularization": 0.01,
+      "validation_macro_f1": 0.6637558970620988
+    },
+    {
+      "gamma": 5.0,
+      "regularization": 0.1,
+      "validation_macro_f1": 0.6499202048292296
+    },
+    {
+      "gamma": 5.0,
+      "regularization": 1.0,
+      "validation_macro_f1": 0.5528734379540832
+    },
+    {
+      "gamma": 20.0,
+      "regularization": 0.01,
+      "validation_macro_f1": 0.6225640131569073
+    },
+    {
+      "gamma": 20.0,
+      "regularization": 0.1,
+      "validation_macro_f1": 0.6316333469332246
+    },
+    {
+      "gamma": 20.0,
+      "regularization": 1.0,
+      "validation_macro_f1": 0.6395154705267064
+    },
+    {
+      "gamma": 80.0,
+      "regularization": 0.01,
+      "validation_macro_f1": 0.5861967737784887
+    },
+    {
+      "gamma": 80.0,
+      "regularization": 0.1,
+      "validation_macro_f1": 0.5903396165563791
+    },
+    {
+      "gamma": 80.0,
+      "regularization": 1.0,
+      "validation_macro_f1": 0.5913478413478414
+    }
+  ],
+  "test": {
+    "accuracy": 0.8590909090909091,
+    "macro_f1": 0.8124616059675297,
+    "confusion_matrix_rows_actual_columns_predicted": [
+      [
+        72,
+        11,
+        1
+      ],
+      [
+        3,
+        18,
+        3
+      ],
+      [
+        13,
+        0,
+        99
+      ]
+    ],
+    "class_order": [
+      "normal",
+      "benign",
+      "malignant"
+    ],
+    "per_class": {
+      "normal": {
+        "precision": 0.8181818181818182,
+        "recall": 0.8571428571428571,
+        "f1": 0.8372093023255814,
+        "support": 84
+      },
+      "benign": {
+        "precision": 0.6206896551724138,
+        "recall": 0.75,
+        "f1": 0.679245283018868,
+        "support": 24
+      },
+      "malignant": {
+        "precision": 0.9611650485436893,
+        "recall": 0.8839285714285714,
+        "f1": 0.9209302325581395,
+        "support": 112
+      }
+    }
+  }
+}
