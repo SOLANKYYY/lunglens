@@ -2,11 +2,11 @@
 import json
 from http.server import BaseHTTPRequestHandler
 from functools import lru_cache
-from backend.ct_model import CTPredictor
+from backend.cnn_inference import CNNPredictor
 
 @lru_cache(maxsize=1)
 def predictor():
-    return CTPredictor()
+    return CNNPredictor()
 
 class CTHandler(BaseHTTPRequestHandler):
     def send_json(self, code, data):

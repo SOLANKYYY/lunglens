@@ -7,7 +7,7 @@
       "config": {
         "includeFiles": [
           "backend/**",
-          "models/ct/**"
+          "models/cnn/**"
         ]
       }
     },

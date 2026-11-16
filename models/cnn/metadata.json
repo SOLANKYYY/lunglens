@@ -1,0 +1,32 @@
+{
+  "model_version": "iqoth-cnn-v1",
+  "architecture": "3 convolution blocks + dense classifier",
+  "framework": "PyTorch training / ONNX Runtime inference",
+  "data_kind": "research",
+  "classes": [
+    "normal",
+    "benign",
+    "malignant"
+  ],
+  "image_size": 64,
+  "seed": 42,
+  "clinical_validation": false,
+  "stage_supported": false,
+  "source": "https://github.com/hamdalla93/The-IQ-OTHNCCD-lung-cancer-dataset",
+  "source_commit": "edcdd5a73e8e92377d2a47e69c0b9a551e1c5ce3",
+  "dataset_doi": "10.17632/bhmdr45bh2.4",
+  "license": "CC BY 4.0",
+  "split_limitation": "Image-level split grouped by exact decoded pixels and perceptual hash distance <=4. Patient IDs are unavailable; patient overlap and near-duplicate leakage may remain. This is NOT patient-independent or clinical validation.",
+  "weights_sha256": "f1c01bf2e9aa6c77c5270240297167dbb2d850748b93313e2053ae5ea24b50b5",
+  "parameters": 285699,
+  "training_epochs": 40,
+  "best_epoch": 12,
+  "batch_size": 32,
+  "learning_rate": 0.001,
+  "optimizer": "Adam",
+  "loss": "class-weighted cross entropy",
+  "deep_learning": true,
+  "preprocessing": "EXIF orientation; grayscale; crop 8% from each edge; bilinear 64x64; divide by 255",
+  "torch_version": "2.15.0+cpu",
+  "onnxruntime_version": "1.30.0"
+}

@@ -1,4 +1,41 @@
-# LungLens — Lung Cancer Detection Research
+# LungLens — CNN Lung Cancer Detection Research
+
+**Current version: real deep learning for Essentials of Deep Learning, AIML B.**
+
+Team leader: **Solanki Om Narendra — 24BTRCL190**. Members: Jayansh Jain — 24BTRCL088; Jainish V Jain — 24BTRCL087; Amin Heet Deepakkumar — 24BTLCL002.
+
+The live app now uses a 3-block CNN trained with PyTorch and restored with ONNX Runtime. It shows normal / benign / malignant softmax percentages, class meanings, score separation, and a downloadable explanation. Percentages are uncalibrated model scores, not personal cancer probability, affected-lung percentage or stage.
+
+- CNN: 285,699 parameters, 40 training epochs, lowest validation loss at epoch 12.
+- Fixed split: 657 train / 220 validation / 220 test, inherited unchanged from the baseline manifest.
+- CNN test accuracy **76.36%**, macro F1 **0.6397**. Benign recall is only **29.17% (7/24)**.
+- The earlier classical baseline performed better: **85.91%** accuracy. It remains available as a comparison, not the default live model.
+- `models/cnn/model.onnx` is the runtime network. `weights.pt` is the saved PyTorch state dictionary. Metadata, history and evaluation are included.
+- Image preprocessing is shared with the baseline: grayscale, 8% crop per border, bilinear 64×64 resize, divide by 255.
+- No synthetic training images or augmentation were used.
+
+## New staging reference
+
+We investigated **NSCLC-Radiomics (Lung1)**, a different dataset with clinical staging records. The inspected CSV has 422 cases: I 93, II 40, IIIa 112, IIIb 176, and 1 missing stage. There are no Stage IV cases. The website lets students inspect documented historical overall-stage labels. This is a separate source-record lookup, **not a trained stage predictor**, and is not connected to the uploaded image.
+
+Clinical subset attribution: Aerts et al. (2014), *Data From NSCLC-Radiomics*, version 4, TCIA, DOI https://doi.org/10.7937/K9/TCIA.2015.PF0M9REI. Licence: CC BY-NC 3.0, non-commercial educational use. The app retains only pseudonymous case ID and documented overall stage, with missing records omitted. Original stage values are unchanged. Some source TNM encodings are ambiguous; no new stage is derived from them. Historical conventions can differ from current staging. Full imaging, reliable clinical linkage and a separate evaluated model are required for future stage prediction.
+
+## Run and reproduce the CNN
+
+```powershell
+python -m pip install -r requirements.txt
+python -m backend.ct_server
+# Training needs CPU PyTorch plus the original source dataset:
+python -m pip install -r requirements-cnn-train.txt
+python -m scripts.train_cnn --source ../iqoth-source --epochs 40
+python -m unittest discover -s tests -v
+```
+
+See [the faculty guide](docs/FACULTY_GUIDE.md) for an explanation script, demo steps, team speaking roles and viva questions. The earlier baseline documentation follows for reproducibility. Its raw-score description applies only to the classical baseline; the current CNN shows softmax percentages.
+
+---
+
+# Earlier classical baseline and source dataset
 
 Upload a de-identified CT image and run a **saved model trained on real IQ-OTH/NCCD CT images**. The default website now uses real inference; it does not use the old synthetic-pattern demonstration.
 

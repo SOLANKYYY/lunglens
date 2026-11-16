@@ -5,6 +5,7 @@ import numpy as np
 from PIL import Image
 from backend.ct_api import CTHandler
 from backend.ct_model import CTPredictor
+from backend.cnn_inference import CNNPredictor
 ROOT=Path(__file__).resolve().parents[1]
 class RealCTTests(unittest.TestCase):
     def test_restored_model_and_samples(self):
@@ -36,7 +37,7 @@ class RealCTTests(unittest.TestCase):
             data=(ROOT/'web/real_samples/normal-1.jpg').read_bytes()
             req=urllib.request.Request(base+'/api/predict',data=data,headers={'Content-Type':'image/jpeg'})
             with urllib.request.urlopen(req) as r:actual=json.load(r)
-            self.assertEqual(actual,CTPredictor().predict(data))
+            self.assertEqual(actual,CNNPredictor().predict(data))
             for mime,body,status in [('text/plain',b'x',415),('image/png',b'bad',422),('image/png',b'',413)]:
                 with self.assertRaises(urllib.error.HTTPError) as error:
                     urllib.request.urlopen(urllib.request.Request(base+'/api/predict',data=body,headers={'Content-Type':mime}))

@@ -1,0 +1,1706 @@
+{
+  "dataset": "NSCLC-Radiomics (Lung1)",
+  "source": "https://doi.org/10.7937/K9/TCIA.2015.PF0M9REI",
+  "license": "CC BY-NC 3.0",
+  "attribution": "Aerts et al. (2014), Data From NSCLC-Radiomics, version 4, TCIA",
+  "purpose": "Published historical clinical stage records for education. Not predictions for your uploaded image. No staging model is trained or deployed.",
+  "records": [
+    {
+      "case_id": "LUNG1-001",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-002",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-003",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-004",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-005",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-006",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-007",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-008",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-009",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-010",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-011",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-012",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-013",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-014",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-015",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-016",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-017",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-018",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-019",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-020",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-021",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-022",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-023",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-024",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-025",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-026",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-027",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-028",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-029",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-030",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-031",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-032",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-033",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-034",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-035",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-036",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-037",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-038",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-039",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-040",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-041",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-042",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-043",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-044",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-045",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-046",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-047",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-048",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-049",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-050",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-051",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-052",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-053",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-054",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-055",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-056",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-057",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-058",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-059",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-060",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-061",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-062",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-063",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-064",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-065",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-066",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-067",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-068",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-069",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-070",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-071",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-072",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-073",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-074",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-075",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-076",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-077",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-078",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-079",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-080",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-081",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-082",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-083",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-084",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-085",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-086",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-087",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-088",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-089",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-090",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-091",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-092",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-093",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-094",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-095",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-096",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-097",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-098",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-099",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-100",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-101",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-102",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-103",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-104",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-105",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-106",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-107",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-108",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-109",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-110",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-111",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-112",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-113",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-114",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-115",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-116",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-117",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-118",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-119",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-120",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-121",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-122",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-123",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-124",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-125",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-126",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-127",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-128",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-129",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-130",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-131",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-132",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-133",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-134",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-135",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-136",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-137",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-138",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-139",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-140",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-141",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-142",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-143",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-144",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-145",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-146",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-147",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-148",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-149",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-150",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-151",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-152",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-153",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-154",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-155",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-156",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-157",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-158",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-159",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-160",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-161",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-162",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-163",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-164",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-165",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-166",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-167",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-168",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-169",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-170",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-171",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-172",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-173",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-174",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-175",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-176",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-177",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-178",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-179",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-180",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-181",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-182",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-183",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-184",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-185",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-186",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-187",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-188",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-189",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-190",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-191",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-192",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-193",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-194",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-195",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-196",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-197",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-198",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-199",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-200",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-201",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-202",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-203",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-204",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-205",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-206",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-207",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-208",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-209",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-210",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-211",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-212",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-213",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-214",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-215",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-216",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-217",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-218",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-219",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-220",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-221",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-222",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-223",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-224",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-225",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-226",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-227",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-228",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-229",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-230",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-231",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-232",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-233",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-234",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-235",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-236",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-237",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-238",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-239",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-240",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-241",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-242",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-243",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-244",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-245",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-246",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-247",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-248",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-249",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-250",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-251",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-252",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-253",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-254",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-255",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-256",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-257",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-258",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-259",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-260",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-261",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-262",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-263",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-264",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-265",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-266",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-267",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-268",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-269",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-270",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-271",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-273",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-274",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-275",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-276",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-277",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-278",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-279",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-280",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-281",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-282",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-283",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-284",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-285",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-286",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-287",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-288",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-289",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-290",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-291",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-292",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-293",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-294",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-295",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-296",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-297",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-298",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-299",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-300",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-301",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-302",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-303",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-304",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-305",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-306",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-307",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-308",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-309",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-310",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-311",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-312",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-313",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-314",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-315",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-316",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-317",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-318",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-319",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-320",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-321",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-322",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-323",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-324",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-325",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-326",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-327",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-328",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-329",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-330",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-331",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-332",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-333",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-334",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-335",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-336",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-337",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-338",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-339",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-340",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-341",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-342",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-343",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-344",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-345",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-346",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-347",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-348",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-349",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-350",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-351",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-352",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-353",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-354",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-355",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-356",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-357",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-358",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-359",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-360",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-361",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-362",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-363",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-364",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-365",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-366",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-367",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-368",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-369",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-370",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-371",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-372",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-373",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-374",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-375",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-376",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-377",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-378",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-379",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-380",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-381",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-382",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-383",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-384",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-385",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-386",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-387",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-388",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-389",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-390",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-391",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-392",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-393",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-394",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-395",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-396",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-397",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-398",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-399",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-400",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-401",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-402",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-403",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-404",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-405",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-406",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-407",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-408",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-409",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-410",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-411",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-412",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-413",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-414",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-415",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-416",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-417",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-418",
+      "documented_stage": "I"
+    },
+    {
+      "case_id": "LUNG1-419",
+      "documented_stage": "IIIb"
+    },
+    {
+      "case_id": "LUNG1-420",
+      "documented_stage": "II"
+    },
+    {
+      "case_id": "LUNG1-421",
+      "documented_stage": "IIIa"
+    },
+    {
+      "case_id": "LUNG1-422",
+      "documented_stage": "I"
+    }
+  ],
+  "counts": {
+    "I": 93,
+    "II": 40,
+    "IIIa": 112,
+    "IIIb": 176
+  },
+  "missing_stage": 1,
+  "limitations": [
+    "No Stage IV examples in this clinical CSV.",
+    "Historical source staging conventions may differ from current staging.",
+    "Full DICOM imaging and clinical linkage would be needed for a new staging model.",
+    "Some source TNM encodings are ambiguous; do not infer new stage labels from them."
+  ]
+}
